@@ -3,6 +3,8 @@ var https = require('https');
 var url = require('url');
 var concat = require('concat-stream');
 
+// ↓テキトーにでっち上げたキー＆証明書なので公開しても問題ないものです
+
 var SERVER_KEY = '-----BEGIN RSA PRIVATE KEY-----\n'
 +'MIIJJwIBAAKCAgEAr+6P57W7XcWC9FAaFF0ZPt2Rn5CLT6RfF0LcZJehI+m7/tSa\n'
 +'QZWED2FsjD2KfJZYgHLDOnNzNUBPmL3C4RNnwmnt4AXfD63mZ1xtdrfrcpsECdaz\n'
