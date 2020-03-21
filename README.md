@@ -48,7 +48,13 @@ $ cp clasp_prod.json.sample clasp_prod.json
 ```
 $ ./build.sh -s [-t prod]
 ```
-
+↓Google Apps Scriptでの実行対象の関数一覧に表示させるには main.js の中で、こんな感じで global スコープに登録しておく。
+```
+global.callApi = function (sheetId, name) {
+  var storage = new SpreadSheetDataStorage(sheetId);
+  //storage.getSheetByName(name);
+}
+```
 ## ビルド
 Browserify＆gasify します。
 
