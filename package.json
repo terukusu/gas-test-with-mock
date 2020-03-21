@@ -1,0 +1,17 @@
+{
+  "name": "gas-test-with-mock",
+  "version": "1.0.0",
+  "description": "Google Apps Script(GAS) 開発でローカル環境で開発したり、単体テストしたり、デプロイ先(Dev/Prod)を切り替えたりする開発プロジェクトのテンプレ。  ",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concat-stream": "^2.0.0",
+    "date-format": "^2.0.0",
+    "gasify": "^1.0.0",
+    "request": "^2.88.2"
+  }
+}
