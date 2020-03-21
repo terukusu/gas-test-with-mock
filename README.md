@@ -38,8 +38,8 @@ $ npm install
 よしなにググって clasp login までやっておくこと。
 
 ```
-cp clasp_dev.json.sample clasp_dev.json
-cp clasp_prod.json.sample clasp_prod.json
+$ cp clasp_dev.json.sample clasp_dev.json
+$ cp clasp_prod.json.sample clasp_prod.json
 ```
 各 clasp_xxx.json の scriptId に開発用や本番用に使う Google Apps Script プロジェクトのプロジェクトIDを記載しておく。
 
@@ -88,7 +88,6 @@ $ ./build.sh -b -d -e ./src-test/RealTestRunner.js
 2. GASのテスト用プロジェクトを開いて、「gastTestRunner」関数を実行すると単体テストが実行できる。実行結果はログに出力される。
 
 ### ローカル環境でモッククラス自体の単体テスト
-1. テスト実行
 ```
 $ node -e "require('./src-mock/TestRunner'); gastTestRunner();"
 ```
