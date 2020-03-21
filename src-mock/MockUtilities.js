@@ -12,13 +12,13 @@ function formatDate(date, tz, format) {
 
 function base64Encode(data) {
   var encoding = 'latin1';
-  var reEncoded = new Buffer(data, 'latin1').toString('latin1');
+  var reEncoded = Buffer.from(data, 'latin1').toString('latin1');
 
   if (data !== reEncoded) {
     encoding = 'utf-8';
   }
 
-  var base64 = new Buffer(data, encoding).toString('base64');
+  var base64 = Buffer.from(data, encoding).toString('base64');
 
   return base64;
 }

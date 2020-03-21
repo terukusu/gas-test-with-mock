@@ -52,10 +52,10 @@ function gastTestRunner(test) {
     var sign = crypto.createSign('RSA-SHA256');
     sign.update(data, 'utf-8');
     var expectedSignature = sign.sign(privateKey, 'latin1');
-    var expectedSignatureBase64 = new Buffer(expectedSignature, 'latin1').toString('base64');
+    var expectedSignatureBase64 = Buffer.from(expectedSignature, 'latin1').toString('base64');
 
     var signature = MockUtilities.computeRsaSha256Signature(data, privateKey);
-    var signatureBase64 = new Buffer(signature, 'latin1').toString('base64');
+    var signatureBase64 = Buffer.from(signature, 'latin1').toString('base64');
 
     t.equal(signatureBase64, expectedSignatureBase64, '署名が期待している値と一致していること');
 
