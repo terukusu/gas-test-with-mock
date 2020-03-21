@@ -50,7 +50,7 @@ $ ./build.sh -s [-t prod]
 ```
 
 ## ビルド
-Broserify＆gasify します。
+Browserify＆gasify します。
 
 ### 開発環境向けビルド
 ```
